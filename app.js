@@ -12,7 +12,7 @@ app.use('/',productRoutes);
 const promise=createConnection();
 promise.then((conInfo)=>{
     console.log('DB connection Established');
-    app.listen(process.env.PORT||4444,err=>{
+    app.listen(process.env.PORT||10000,err=>{
         if (err) {
             console.log('sever Crash',err);
         }
